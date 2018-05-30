@@ -32,7 +32,7 @@ class BanCommand extends Command {
             if (count($args) == 1) {
                 if ($player != null) {
                     $banList->addBan($player->getName(), null, null, $sender->getName());
-                    $player->kick(TextFormat::RED . "Your account has been suspended from our network!\n§4Banned by: §bStaff", false);
+                    $player->kick(TextFormat::RED . "Your Account Has Beend Banned On Our Server!!!\n§4Banned by: §bStaff", false);
                     $playerName = $player->getName();
                 } else {
                     $banList->addBan($args[0], null, null, $sender->getName());
@@ -47,7 +47,7 @@ class BanCommand extends Command {
                 $reason = substr($reason, 0, strlen($reason) - 1);
                 if ($player != null) {
                     $banList->addBan($player->getName(), $reason, null, $sender->getName());
-                    $player->kick(TextFormat::RED . "You have been suspended from our network!\n§4Banned by: §bStaff\n§5Reason: " . TextFormat::AQUA . $reason . TextFormat::RED . ".", false);
+                    $player->kick(TextFormat::RED . "You Have Been Suspended From Our Server111\n§4Banned By: §bStaff\n§5Reason: " . TextFormat::AQUA . $reason . TextFormat::RED . ".", false);
                     $playerName = $player->getName();
                 } else {
                     $banList->addBan($args[0], $reason, null, $sender->getName());
@@ -56,7 +56,7 @@ class BanCommand extends Command {
                         . TextFormat::AQUA . $reason . TextFormat::RED . ".");
             }
         } else {
-            $sender->sendMessage(Translation::translate("noPermission"));
+            $sender->sendMessage(Translation::translate("NoPermission"));
         }
         return true;
     }
