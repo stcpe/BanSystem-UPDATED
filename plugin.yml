@@ -1,7 +1,7 @@
-
 name: VMPE-Action
 main: bansystem\BanSystem
 version: 2.0.1
 author: VMPE Development Team
+authors: VMPE Development Team,stcpev1
 api: [3.0.0-ALPHA9, 3.0.0-ALPHA10]
-description: A ban system for Pocketmine only, running Latest PMMP-Builds.
+description: A Ban System For PocketMine Only, Running Latest PMMP-Builds
